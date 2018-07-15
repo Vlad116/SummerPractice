@@ -1,3 +1,3 @@
 # SummerPractice
-Summer practice 2018 ITIS JavaLab, 
+2018 ITIS 11-703 group JavaLab, 
 web application development on NodeJS server
