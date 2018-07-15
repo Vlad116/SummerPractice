@@ -22,6 +22,8 @@ effective-pom.xml
 effective-settings.xml
 /*/.gwt/
 .cache
+.css
+.js
 .idea/
 *.iml
 *.log
