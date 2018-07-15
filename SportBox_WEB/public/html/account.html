@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Merriweather&subset=cyrillic');
+
+        body {
+            font-family: 'Comfortaa', cursive;
+        }
+
+        .navbar navbar-expand-lg navbar-light {
+            font-family: 'Merriweather', cursive;
+        }
+
+        .row {
+
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 60px;
+            line-height: 60px; /* Vertically center the text there */
+            background-color: #f5f5f5;
+        }
+
+
+    </style>
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light" ; style="background-color: lightsteelblue; color:midnightblue; ">
+    <a href="index.html" class="navbar-brand">
+        <img src="../images/Primary_logo_on_transparent_127x75.png" height="75" width="112" alt="logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collaps" data-target="#navbarSupported">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <footer><em><h1>SportBox store</h1>
+        <p>- shop for lovers, sports, leisure and travel.</p></em></footer>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+
+    <form class="form-inline my-2 my-lg-0" style="padding-right: 30px;">
+        <input type="text" class="form-control mr-sm-2" placeholder="Write product name" aria-label="Search">
+        <button type="button" class="btn btn-primary" style="background-color: midnightblue; color: white">Search
+        </button>
+    </form>
+
+    <ul class="navbar-nav mr-auto" style="padding-right: 5px">
+
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="about.html" class="nav-link">About us</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="workout.html" class="nav-link">Workout</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="catalogue.html" class="nav-link">Catalogue</a>
+        </li>
+
+        <li class="nav-item active">
+            <a href="account.html" class="nav-link">Profile</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="registration.html" class="nav-link">Registration</a>
+        </li>
+    </ul>
+
+    <a href="login.html" class="navbar-brand">
+        <img src="../images/goto.png" height="40" width="50" alt="log in">
+    </a>
+
+</nav>
+
+
+<div class="modal" id="addProductModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Add or change your product</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <form class="needs-validation" action="/addproduct">
+
+                    <p>Product name</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color: lightsteelblue ; "
+                              id="customProductnameText"></span>
+                        </div>
+                        <input type="text" name="productname"
+                               class="form-control" id="customProductname" placeholder="Product name"
+                               aria-label="Product name"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                    <p>Price</p>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color:  lightsteelblue;"
+                              id="customPriceText"></span>
+                        </div>
+                        <input type="text" name="price"
+                               class="form-control" id="customPrice">
+                    </div>
+
+                    <p> Quantity available</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color:  lightsteelblue; "
+                              id="QuantityAvailableText"></span>
+                        </div>
+                        <input type="text" name="available"
+                               class="form-control" id="QuantityAvailable">
+                    </div>
+
+                    <label for="shortDescription">Short description</label>
+                    <textarea class="form-control" name="shortdescription" rows="10" id="shortDescription">Write a brief description of the product up to 250 characters</textarea>
+
+                    <label for="description">Description</label>
+                    <textarea class="form-control" name="description" rows="20"
+                              id="description">Write a full description of the product</textarea>
+
+                    <label for="characteristics">Characteristics</label>
+                    <textarea class="form-control" name="characteristics" rows="15"
+                              id="characteristics">The main characteristics of the product</textarea>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary"
+                                style="background-color: lightsteelblue; color: white">
+                            <!--data-dismiss="modal">-->
+                            <!--onclick="addProduct(-->
+                            <!--document.getElementById('customProductname').value,-->
+                            <!--document.getElementById('customPrice').value,-->
+                            <!--document.getElementById('QuantityAvailableText').value)"
+                                document.getElementById('shortDescription').value)"
+                                document.getElementById('description').value)"
+                                document.getElementById('characteristics').value)"
+                            -->
+                            Save
+                        </button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+                <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-primary" style="background-color: lightsteelblue; color: white"-->
+                <!--data-dismiss="modal">-->
+                <!--&lt;!&ndash;onclick="addProduct(&ndash;&gt;-->
+                <!--&lt;!&ndash;document.getElementById('customProductname').value,&ndash;&gt;-->
+                <!--&lt;!&ndash;document.getElementById('customPrice').value,&ndash;&gt;-->
+                <!--&lt;!&ndash;document.getElementById('QuantityAvailableText').value)"-->
+                <!--document.getElementById('shortDescription').value)"-->
+                <!--document.getElementById('description').value)"-->
+                <!--document.getElementById('characteristics').value)"-->
+                <!--&ndash;&gt;-->
+                <!--Save-->
+                <!--</button>-->
+                <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container center">
+    <div class="row">
+        <div class="container" style=" padding-top: 70px;">
+            <h1>My profile:</h1>
+            <div class="col-md-10">
+                <form class="needs-validation" novalidate>
+
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
+                        <div class="col-md-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                   value="email@example.com">
+                        </div>
+
+                        <!--<div class="input-group">-->
+                        <!--<div class="input-group-prepend">-->
+                        <!--<span class="input-group-text" id="validationTooltipEmailPrepend">@</span>-->
+                        <!--</div>-->
+
+                        <!--<input type="text" class="form-control" id="validationTooltipEmail"-->
+                        <!--placeholder="someemail@example.com"-->
+                        <!--aria-describedby="validationTooltipEmailPrepend"-->
+                        <!--required>-->
+                        <!--<div class="invalid-tooltip">-->
+                        <!--someemail@example.com-->
+                        <!--</div>-->
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticUsername" class="col-sm-2 col-form-label">Username:</label>
+                        <div class="col-md-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticUsername"
+                                   value="SomeUsername">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label for="staticFirstName" class="col-sm-2 col-form-label">First name:</label>
+                        <div class="col-md-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticFirstName"
+                                   value="Vlad">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticSecondName" class="col-sm-2 col-form-label">Second name:</label>
+                        <div class="col-md-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticSecondName"
+                                   value="Alekseev">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticCity" class="col-sm-2 col-form-label">City:</label>
+                        <div class="col-md-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticCity"
+                                   value="Kazan">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticState" class="col-sm-2 col-form-label">State:</label>
+                        <div class="col-md-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticState"
+                                   value="Tatarstan">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <br>
+            <h2>How do I add an item?</h2>
+            <blockquote class="blockquote">
+                <ol>
+                    <li>Click the <strong>add</strong> button</li>
+                    <li>In the appeared modal window, fill in all the fields of the form, and click
+                        <strong>save</strong></li>
+                    <li>Congratulations, you have added the product to the catalog</li>
+                </ol>
+            </blockquote>
+
+            <div class="row" style="padding-top: 50px">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header" style="background-color:  lightsteelblue; color:white">
+                            <p><strong>List of products</strong></p>
+
+                            <div class="mr-3" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey;
+                                background-color: #dc3545; color: white" onclick="getAnalyzingPapers()">
+                                    Delete
+                                </button>
+                            </div>
+
+                            <div class="mr-2" style="float: left;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        data-toggle="modal"
+                                        data-target="#addProductModal">
+                                    Change
+                                </button>
+                            </div>
+
+
+                            <div class="mr-2" style="float: left;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        data-toggle="modal"
+                                        data-target="#addProductModal">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="card-body">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Product name</th>
+                                    <th>Price</th>
+                                    <th>Date</th>
+                                    <th>Available</th>
+                                    <th>Bought</th>
+                                </tr>
+                                </thead>
+                                <tbody id="productTable">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="padding-top: 200px">
+    <footer class="footer fixed-bottom" style="background-color: lightsteelblue;">
+        <div class="container" style="color: white">
+            <span class="textCreator" style="color:white; float: left;"> &copy; 2018 Alekseev Vladislav</span>
+            <h6 style="float: left; padding-top: 24px; padding-left: 550px"><em>Our pages in social networks</em>
+            </h6>
+
+            <a href="https://vk.com/shkatulka_ke" class="footer-logo-link" style="padding-left: 10px">
+                <img src="../images/vk.png" height="32" width="32" alt="vk logo">
+            </a>
+
+            <a href="#" class="footer-logo-link" style="padding-left: 5px">
+                <img src="../images/fc.png" height="48" width="48" alt="facebook logo">
+            </a>
+
+            <a href="https://www.instagram.com/sportbox_ke/" class="footer-logo-link">
+                <img src="../images/inst.png" height="32" width="36" alt="inst logo">
+            </a>
+
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

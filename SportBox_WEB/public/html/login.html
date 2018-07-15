@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Merriweather&subset=cyrillic');
+
+        body {
+            font-family: 'Comfortaa', cursive;
+        }
+
+        .row {
+
+        }
+
+        body {
+            background: #eee !important;
+        }
+
+        /*.wrapper {*/
+        /*margin-top: 80px;*/
+        /*margin-bottom: 80px;*/
+        /*}*/
+
+        .form-signin {
+            width: 500px;
+            padding: 15px 35px 45px;
+            margin: 0 auto;
+            background-color: lightsteelblue;
+            border: 5px solid rgba(0, 42, 137, 0.1);
+        }
+
+        .form-signin
+        .form-signin .checkbox {
+            margin-bottom: 30px;
+        }
+
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+        .form-signin input[type="text"] {
+            margin-bottom: 15px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 20px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+    </style>
+
+    <title>Login Form</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+
+
+</head>
+
+<body>
+
+<div class="container h-100" style="padding-top: 80px">
+    <div class="row h-100 justify-content-center align-items-center">
+
+        <form class="form-signin" action="/login">
+
+            <h3 style="margin-top: 25px">Username:</h3>
+
+            <input type="text" class="form-control" name="username"
+                   placeholder="Enter you email address or username"
+                   required=""
+                   autofocus=""/>
+
+            <h3>Password:</h3>
+
+            <input type="password" class="form-control" name="password" placeholder="Enter you password"
+                   required=""/>
+
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> <em>Remember me</em>
+
+                <a href="registration.html" style="padding-left: 60px ">Register now</a>
+
+                <a href="#"
+                   data-toggle="modal"
+                   data-target="#ResetPasswordModal"
+                   style="padding-left: 15px">Lost your password?</a>
+
+            </label>
+            <!--<input class="btn btn-lg btn-primary btn-block" type="submit" onclick="history.back(); return false;" value="Login"/>-->
+            <!--<a href="account.html">-->
+            <button class="btn btn-lg btn-primary btn-block"
+                    type="submit"> <!--onclick="history.back(); return false;"--> Login
+            </button>
+            <!--</a>-->
+        </form>
+    </div>
+</div>
+
+
+<div class="modal" id="ResetPasswordModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header" style="background-color:lightsteelblue ">
+                <h4 class="modal-title">Write your email for password recovery</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="input-group mb-3">
+                    <input type="text"
+                           class="form-control" id="Email" placeholder="Email"
+                           aria-label="Email"
+                           aria-describedby="basic-addon1">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"
+                            style="background-color: lightsteelblue; color: white"
+                            data-dismiss="modal"
+                            data-toggle="modal"
+                            data-target="#ResetCodeModal">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="ResetCodeModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: lightsteelblue">
+                <h4 class="modal-title">Enter your recovery code</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="input-group mb-3">
+                    <input type="text"
+                           class="form-control" id="customRecoveryCode" placeholder="Recovery code"
+                           aria-label="Recovery code"
+                           aria-describedby="basic-addon1">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"
+                            style="background-color: lightsteelblue; color: white"
+                            data-dismiss="modal">
+                        Enter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
