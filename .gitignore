@@ -22,8 +22,7 @@ effective-pom.xml
 effective-settings.xml
 /*/.gwt/
 .cache
-.css
-.js
+
 .idea/
 *.iml
 *.log
@@ -31,3 +30,5 @@ effective-settings.xml
 *.jar
 */dependency-reduced-pom.xml
 node_modules
+js
+css
