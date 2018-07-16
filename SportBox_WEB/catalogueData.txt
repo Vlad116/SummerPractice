@@ -1,0 +1,12 @@
+Bottle2.2l 799 10
+DumbbellBottle 999 15
+BottleShaker 599 20
+Smartband_Fitness_Braslet 649 10
+Smartwatch 1199 3
+HandExpander 199 20
+TrubeExpander 1799 8
+RubberLoop 375 15
+KinosioTape 350 30
+ThermalBottleTropical 599 10
+ThermalBottleMetalic 699 10
+ThermalGlass 425 10

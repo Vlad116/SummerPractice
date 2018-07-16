@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">-->
 
     <style>
+
         @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Merriweather&subset=cyrillic');
 
         body {
@@ -17,9 +19,13 @@
             font-family: 'Merriweather', cursive;
         }
 
+        .row {
+
+        }
+
         .footer {
             position: absolute;
-            bottom: 10px;
+            bottom: 0;
             width: 100%;
             /* Set the fixed height of the footer here */
             height: 60px;
@@ -27,26 +33,19 @@
             background-color: #f5f5f5;
         }
 
-        .container-bottom {
-
-        }
-
 
     </style>
-
-    <title>SportBox</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>About SportBox store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
 </head>
 
 
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light" ; style="background-color: lightsteelblue; color:midnightblue; ">
     <a href="index.html" class="navbar-brand">
         <img src="../images/Primary_logo_on_transparent_127x75.png" height="75" width="112" alt="logo">
@@ -106,7 +105,7 @@
                 <img src="../images/page-01.png" width="1200">
                 <br>
                 <h2 style="padding-left: 10px"><em>Some of our products:</em></h2>
-                <footer style="padding-left: 40px">-you can find these products in the catalog</footer>
+                <footer style="padding-left: 40px"><em>-click on the picture to go to the product</em></footer>
                 <div id="carouselItemIndicators" class="carousel slide" data-ride="carousel" style="padding-top: 20px">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselItemIndicators" data-slide-to="0" class="active"></li>
@@ -118,23 +117,31 @@
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="../images/tape.jpg"
-                                 style="height: 700px; width: 700px" alt="First slide">
+                            <a href="catalogue_tape.html">
+                                <img href="" class="d-block w-100" src="../images/tape.jpg"
+                                     style="height: 700px; width: 700px" alt="First slide">
+                            </a>
                         </div>
 
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../images/SmartWatch.jpg"
-                                 style="height: 700px; width: 700px" alt="Second slide">
+                            <a href="catalogue_braslet.html">
+                                <img class="d-block w-100" src="../images/SmartWatch.jpg"
+                                     style="height: 700px; width: 700px" alt="Second slide">
+                            </a>
                         </div>
 
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../images/example.jpg"
-                                 style="height: 700px; width: 700px" alt="Thirs slide">
+                            <a href="catalogue_braslet.html">
+                                <img class="d-block w-100" src="../images/example.jpg"
+                                     style="height: 700px; width: 700px" alt="Thirs slide">
+                            </a>
                         </div>
 
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../images/bottle.jpg"
-                                 style="height: 700px; width: 700px" alt="Four slide">
+                            <a href="catalogue.html">
+                                <img class="d-block w-100" src="../images/bottle.jpg"
+                                     style="height: 700px; width: 700px" alt="Four slide">
+                            </a>
                         </div>
 
                     </div>
