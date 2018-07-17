@@ -9,16 +9,12 @@
 
         @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Merriweather&subset=cyrillic');
 
-        body {
+        .navbar {
             font-family: 'Comfortaa', cursive;
         }
 
-        .navbar navbar-expand-lg navbar-light {
-            font-family: 'Merriweather', cursive;
-        }
-
-        .row {
-
+        .container{
+            font-family: 'Comfortaa', cursive;
         }
 
         .footer {
@@ -43,6 +39,7 @@
 <body>
 
 
+
 <nav class="navbar navbar-expand-lg navbar-light" ; style="background-color: lightsteelblue; color:midnightblue; ">
     <a href="index.html" class="navbar-brand">
         <img src="../images/Primary_logo_on_transparent_127x75.png" height="75" width="112" alt="logo">
@@ -51,17 +48,19 @@
     <button class="navbar-toggler" type="button" data-toggle="collaps" data-target="#navbarSupported">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <footer><em><h1>SportBox store</h1>
+
+    <footer style="padding-left: 30px"><em><h1>SportBox store</h1>
         <p>- shop for lovers, sports, leisure and travel.</p></em></footer>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
 
-    <form class="form-inline my-2 my-lg-0" style="padding-right: 30px;">
-        <input type="text" class="form-control mr-sm-2" placeholder="Write product name" aria-label="Search">
-        <button type="button" class="btn btn-primary" style="background-color: midnightblue; color: white">Search
-        </button>
-    </form>
+    <!--<form class="form-inline my-2 my-lg-0" style="padding-right: 30px;">-->
+    <!--<input type="text" class="form-control mr-sm-2" placeholder="Write product name" aria-label="Search">-->
+    <!--<button type="submit" class="btn btn-primary" style="background-color: midnightblue; color: white">Search-->
+    <!--</button>-->
+    <!--</form>-->
 
-    <ul class="navbar-nav mr-auto" style="padding-right: 5px">
+    <ul class="navbar-nav mr-auto" style="padding-right: 70px">
 
         <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -75,13 +74,12 @@
             <a href="workout.html" class="nav-link">Workout</a>
         </li>
 
-
         <li class="nav-item active">
             <a href="catalogue.html" class="nav-link">Catalog</a>
         </li>
 
         <li class="nav-item">
-            <a href="account.html" class="nav-link">Profile</a>
+            <a href="#" class="nav-link disabled">Profile</a>
         </li>
 
         <li class="nav-item">
@@ -95,14 +93,14 @@
 
 </nav>
 
-
 <div class="container content" style="padding-top: 60px">
     <div class="row">
         <div class="col-md-4">
             <div class="list-group">
+                <a href="catalogue.html" class="list-group-item">All products</a>
                 <a href="catalogue_expanders.html" class="list-group-item">Expanders</a>
                 <a href="catalogue_tape.html" class="list-group-item active">Tape</a>
-                <a href="catalogue.html" class="list-group-item">Bottle</a>
+                <a href="catalogue_bottle.html" class="list-group-item">Bottle</a>
                 <a href="catalogue_termos.html" class="list-group-item">Thermos</a>
                 <a href="catalogue_braslet.html" class="list-group-item">Fitness bracelets</a>
             </div>

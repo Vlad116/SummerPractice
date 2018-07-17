@@ -8,18 +8,15 @@
 
     <style>
 
+
         @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Merriweather&subset=cyrillic');
 
-        body {
+        .navbar {
             font-family: 'Comfortaa', cursive;
         }
 
-        .navbar navbar-expand-lg navbar-light {
-            font-family: 'Merriweather', cursive;
-        }
-
-        .row {
-
+        .container{
+            font-family: 'Comfortaa', cursive;
         }
 
         .footer {
@@ -45,6 +42,7 @@
 
 <body>
 
+
 <nav class="navbar navbar-expand-lg navbar-light" ; style="background-color: lightsteelblue; color:midnightblue; ">
     <a href="index.html" class="navbar-brand">
         <img src="../images/Primary_logo_on_transparent_127x75.png" height="75" width="112" alt="logo">
@@ -53,17 +51,19 @@
     <button class="navbar-toggler" type="button" data-toggle="collaps" data-target="#navbarSupported">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <footer><em><h1>SportBox store</h1>
+
+    <footer style="padding-left: 30px"><em><h1>SportBox store</h1>
         <p>- shop for lovers, sports, leisure and travel.</p></em></footer>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
 
-    <form class="form-inline my-2 my-lg-0" style="padding-right: 30px">
-        <input type="text" class="form-control mr-sm-2" placeholder="Write product name" aria-label="Search">
-        <button type="button" class="btn btn-primary" style="background-color: midnightblue; color: white">Search
-        </button>
-    </form>
+    <!--<form class="form-inline my-2 my-lg-0" style="padding-right: 30px;">-->
+    <!--<input type="text" class="form-control mr-sm-2" placeholder="Write product name" aria-label="Search">-->
+    <!--<button type="submit" class="btn btn-primary" style="background-color: midnightblue; color: white">Search-->
+    <!--</button>-->
+    <!--</form>-->
 
-    <ul class="navbar-nav mr-auto" style="padding-right: 5px">
+    <ul class="navbar-nav mr-auto" style="padding-right: 70px">
 
         <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -77,13 +77,12 @@
             <a href="workout.html" class="nav-link">Workout</a>
         </li>
 
-
         <li class="nav-item">
             <a href="catalogue.html" class="nav-link">Catalog</a>
         </li>
 
         <li class="nav-item">
-            <a href="account.html" class="nav-link">Profile</a>
+            <a href="#" class="nav-link disabled">Profile</a>
         </li>
 
         <li class="nav-item active">
@@ -99,11 +98,11 @@
 
 <div class="container h-100" style="padding-top: 80px">
     <div class="row h-100 justify-content-center align-items-center">
-        <form class="needs-validation" method="post" novalidate action="/registration">
+        <form class="needs-validation" method="post" action="/registration" novalidate >
 
             <div class="form-group" style="padding-left: 0px">
 
-                <label for="validationTooltipEmail">Email adress:</label>
+                <label for="validationTooltipEmail" style="padding-bottom: 5px">Email adress:</label>
 
                 <div class="input-group">
 
@@ -127,7 +126,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="validationTooltipUsername">Username:</label>
+                    <label for="validationTooltipUsername" style="padding-bottom: 5px; padding-top: 5px">Username:</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
@@ -265,7 +264,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="validationTooltip04">State:</label>
+                        <label for="validationTooltip04" style="padding-bottom: 5px; padding-top: 5px">State:</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="validationTooltipStatePrepend"></span>

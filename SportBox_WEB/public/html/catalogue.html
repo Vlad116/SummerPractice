@@ -7,18 +7,19 @@
 
     <style>
 
+
         @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Merriweather&subset=cyrillic');
 
-        body {
+        .navbar {
             font-family: 'Comfortaa', cursive;
         }
 
-        .navbar navbar-expand-lg navbar-light {
-            font-family: 'Merriweather', cursive;
+        .container{
+            font-family: 'Comfortaa', cursive;
         }
 
-        .row {
-
+        .card-deck{
+            padding-bottom: 25px;
         }
 
         .footer {
@@ -43,6 +44,8 @@
 <body>
 
 
+
+
 <nav class="navbar navbar-expand-lg navbar-light" ; style="background-color: lightsteelblue; color:midnightblue; ">
     <a href="index.html" class="navbar-brand">
         <img src="../images/Primary_logo_on_transparent_127x75.png" height="75" width="112" alt="logo">
@@ -51,17 +54,19 @@
     <button class="navbar-toggler" type="button" data-toggle="collaps" data-target="#navbarSupported">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <footer><em><h1>SportBox store</h1>
+
+    <footer style="padding-left: 30px"><em><h1>SportBox store</h1>
         <p>- shop for lovers, sports, leisure and travel.</p></em></footer>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
 
-    <form class="form-inline my-2 my-lg-0" style="padding-right: 30px;">
-        <input type="text" class="form-control mr-sm-2" placeholder="Write product name" aria-label="Search">
-        <button type="button" class="btn btn-primary" style="background-color: midnightblue; color: white">Search
-        </button>
-    </form>
+    <!--<form class="form-inline my-2 my-lg-0" style="padding-right: 30px;">-->
+    <!--<input type="text" class="form-control mr-sm-2" placeholder="Write product name" aria-label="Search">-->
+    <!--<button type="submit" class="btn btn-primary" style="background-color: midnightblue; color: white">Search-->
+    <!--</button>-->
+    <!--</form>-->
 
-    <ul class="navbar-nav mr-auto" style="padding-right: 5px">
+    <ul class="navbar-nav mr-auto" style="padding-right: 70px">
 
         <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -75,13 +80,12 @@
             <a href="workout.html" class="nav-link">Workout</a>
         </li>
 
-
         <li class="nav-item active">
             <a href="catalogue.html" class="nav-link">Catalog</a>
         </li>
 
         <li class="nav-item">
-            <a href="account.html" class="nav-link">Profile</a>
+            <a href="#" class="nav-link disabled">Profile</a>
         </li>
 
         <li class="nav-item">
@@ -95,14 +99,14 @@
 
 </nav>
 
-
 <div class="container content" style="padding-top: 60px">
     <div class="row">
         <div class="col-md-4">
             <div class="list-group">
+                <a href="catalogue.html" class="list-group-item active">All products</a>
                 <a href="catalogue_expanders.html" class="list-group-item">Expanders</a>
                 <a href="catalogue_tape.html" class="list-group-item">Tape</a>
-                <a href="catalogue.html" class="list-group-item active">Bottle</a>
+                <a href="catalogue_bottle.html" class="list-group-item">Bottle</a>
                 <a href="catalogue_termos.html" class="list-group-item">Thermos</a>
                 <a href="catalogue_braslet.html" class="list-group-item">Fitness bracelets</a>
             </div>
@@ -112,6 +116,7 @@
             <div class="container" style=" padding-bottom: 60px;">
 
                 <div class="card-deck">
+
                     <div class="card">
                         <img class="card-img-top" src="../images/bottle.jpg" width="259" height="180" alt="Bottle">
                         <div class="card-body">
@@ -181,21 +186,309 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/braslet.jpg" width="259" height="180" alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartband fitness bracelet</h5>
+                            <p class="card-text">This stylish Smart fitness bracelet should be what you are looking
+                                for!
+                                High quality material and ergonomic design, this fitness bracelet is very
+                                comfortable to
+                                sit on your hand and records your steps, counts your distance and calories while you
+                                are
+                                doing sports. In addition, it signals the arrival of a call or message on your phone
+                                vibration.
+
+                                The smart Bracelet is compatible with many phones equipped with Bluetooth 4.0 and
+                                Android 4.3 or later, and IOS 7.0 or later
+                            </p>
+                            <footer><em><p>Price: 649</p></em></footer>
+
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <img class="card-img-top" src="../images/SmartWatch.jpg" width="259" height="180"
+                             alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartwatch</h5>
+                            <p class="card-text">Smart watch, with a pedometer and sync heart rate monitor with your
+                                smartphone!</p>
+                            <footer><em><p>Price: 1199</p></em></footer>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="../images/tape_product.jpg" alt="Bottle">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Kinesio tape</h5>
+                            <p class="card-text">Kinesio teip 5 cm*5 m.
+                                Kinesio teip is a special elastic band (plaster) made of cotton with hypoallergenic
+                                adhesive base.
+                                Due to the special interweaving of the tissue fibers, the tape is able to stretch in the
+                                transverse direction, simulating the elasticity of human skin.
+                            </p>
+                            <footer><em><p>Price: 350</p></em></footer>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/kistexpander.jpg" width="259" height="180"
+                             alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand expander</h5>
+                            <p class="card-text">Hand expander-spring accessory for fitness with load regulation.
+                                A great way to train the wrist joint with a gradual increase in weight.
+                                The muscles of the forearm, fingers, and ligaments and tendons will always be in good
+                                shape.
+
+                                Load regulation-10-40 kg
+                            </p>
+                            <footer><em><p>Price: 199</p></em></footer>
+
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <img class="card-img-top" src="../images/trubexpander.jpg" width="259" height="180"
+                             alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Trube expander</h5>
+                            <p class="card-text">Universal, multi-functional set of tube expanders in protective
+                                covers-an improved version of the set of tube expanders;
+                                all expanders in protective covers, there are modern reliable carabiners.
+                                The expander set is a great gift for anyone who wants to look good!
+                                Five pipe bands in multicolored covers with reinforced carabiner
+                                - Two ergonomic handles
+                                - Two cuffs for training the thigh muscles
+                                - One door anchor
+                                - One bag</p>
+                            <footer><em><p>Price: 1799</p></em></footer>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="../images/rubberloop.jpg" width="259" height="180" alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Rubber loop</h5>
+                            <p class="card-text">
+                                Every year for sports come up with more and more different devices: fitness equipment,
+                                fitness tapes, weights, expanders, "iron" and others. Today, rubber loops are
+                                increasingly used for training.
+
+                                Classes with sports equipment, based on the effect of "stretching and squeezing", have
+                                not been new. Even in Stalin's times for training athletes used expanders and harnesses,
+                                but over time, scientists have developed a more versatile accessory consisting of 100%
+                                latex – rubber loops.</p>
+                            <footer><em><p>Price: 375</p></em></footer>
+
+                            <!--<div class="mr-2" style="float: right; padding-top: 115px ">-->
+                            <!--<button type="button" class="btn btn-primary"-->
+                            <!--style=" border-color: darkslategrey; background-color: lightgreen; color: white"-->
+                            <!--href="#">-->
+                            <!--Buy-->
+                            <!--</button>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/termos.jpg" width="259" height="180" alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Thermal bottle</h5>
+                            <p class="card-text">
+                                Thermal bottle is made of high quality stainless steel. Matte finish with rubberized
+                                texture is easy to hold in your hands, there is no trace. Vacuum-insulated plug.
+
+                                Practical and convenient replacement of plastic bottles, which allows you to contribute
+                                to the protection of the environment. Keeps the drink both hot and cold. Perfect for
+                                office, outdoor activities, sports
+
+                                and travel.
+
+                                The juicy colors of the thermal bottle collection of the Tropics will cheer you up in
+                                any weather.
+
+                            </p>
+                            <footer><em><p>Price: 599</p></em></footer>
+
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <img class="card-img-top" src="../images/gold-termos.jpg" width="259" height="180" alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Thermal bottle metalic</h5>
+                            <p class="card-text"> Good old thermal bottle in metallic colors.
+                                Thermal bottle is made of high quality stainless steel. Matte finish with rubberized
+                                texture is easy to hold in your hands, there is no trace. Vacuum-insulated plug.</p>
+                            <footer><em><p>Price: 699</p></em></footer>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="../images/termos2.jpg" width="259" height="180" alt="Bottle">
+                        <div class="card-body">
+                            <h5 class="card-title">Thermal glass 500 ml</h5>
+                            <p class="card-text">This termokraskoy don't have to worry that it will spill the contents,
+                                the locking system of the lid will not allow the drink to spill. Hot-dip chips can be
+                                washed in the dishwasher.
+
+                                Peculiar properties:
+
+                                * Protection against spillage.
+
+                                * Cover locking system.
+
+                                * Vacuum insulation, double wall 304 grade steel.
+
+                                * Keeps the drink hot for 8 hours, cold - up to 24 hours.
+
+                                * BPA FREE (the material from which the product is made does not contain Bisphenol A).
+
+                                * 450 ml.
+
+                                Perfect for:
+
+                                - office's
+
+                                - outdoor activities and walks with children;
+
+                                - gym;
+
+                                - use in the car.</p>
+                            <footer><em><p>Price: 425</p></em></footer>
+
+                            <!--<div class="mr-2" style="float: right; padding-top: 115px ">-->
+                            <!--<button type="button" class="btn btn-primary"-->
+                            <!--style=" border-color: darkslategrey; background-color: lightgreen; color: white"-->
+                            <!--href="#">-->
+                            <!--Buy-->
+                            <!--</button>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="mr-2" style="float: right;">
+                                <button type="button" class="btn btn-primary"
+                                        style=" border-color: darkslategrey; background-color: lightgreen; color: white"
+                                        href="#">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
 
                     </div>
 
                 </div>
+
             </div>
         </div>
     </div>
 </div>
 
-
 <div class="container" style="padding-top: 200px">
     <footer class="footer fixed-bottom" style="background-color: lightsteelblue;">
         <div class="container" style="color: white">
             <span class="textCreator" style="color:white; float: left;"> &copy; 2018 Alekseev Vladislav</span>
-            <h6 style="float: left; padding-top: 24px; padding-left: 550px"><em>Our pages in social networks</em></h6>
+            <h6 style="float: left; padding-top: 24px; padding-left: 550px"><em>Our pages in social networks</em>
+            </h6>
 
             <a href="https://vk.com/shkatulka_ke" class="footer-logo-link" style="padding-left: 10px">
                 <img src="../images/vk.png" height="32" width="32" alt="vk logo">
